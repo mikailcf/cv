@@ -1,0 +1,284 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+% \documentclass[a4paper]{article}
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+% \usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+% \usepackage{baskervald}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+% \usepackage[tmargin=2.2cm, bmargin=2.2cm, lmargin=2.2cm, rmargin=2.2cm]{geometry}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\usepackage{calc}
+
+\usepackage{enumitem}
+
+% A4 tem 8.267in x 11.692in
+
+% resumewidth default é 6.5
+
+% nt = nr - vr + vt
+
+\def \mymargin{0.5in}
+\def \mymarginright{0.85in}
+\def \mysectionwidth{70pt}
+
+\newsectionwidth{\mysectionwidth}
+
+\def \newresumewidth{8.267in - \mymargin - \mymarginright}
+\def \newtextwidth{\newresumewidth - \mysectionwidth}
+
+\usepackage[margin=\mymargin, right=0in, a4paper]{geometry}
+
+\setlength{\textwidth}{\newtextwidth}
+% \setlength{\textwidth}{5.1in}
+\setlength{\resumewidth}{\newresumewidth}
+
+\newcommand{\sbt}{\,\begin{picture}(-1,1)(-2,-3)\circle*{2}\end{picture}\ }
+
+\def \divspace{6pt}
+\def \myitemback{0.55cm}
+\def \myitemsep{0pt}
+
+% \def \mypositionface{\sc}
+\def \mypositionface{\sl}
+% \def \mypositionface{\it}
+% \def \mypositionface{\uppercase}
+% \def \mypositionface{\lfseries}
+% \def \mypositionface{\mdseries}
+
+\def \myprojectface{\it}
+
+\def \myorgface{\sc}
+% \def \myorgface{\sl}
+% \def \myorgface{\it}
+% \def \myorgface{\uppercase}
+% \def \myorgface{\lfseries}
+% \def \myorgface{\mdseries}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\huge\uppercase{Mikail Campos Freitas}} % Your name at the top
+
+\moveleft.5\hoffset\centerline{\rule{2.5in}{.2pt}}\smallskip % Your address
+
+\moveleft.5\hoffset\centerline{24 anos - End. Alameda Itupiranga, 309, Saúde} % Your address
+\moveleft.5\hoffset\centerline{São Paulo, SP - 04294-090}
+\moveleft.5\hoffset\centerline{Tel. Res. (11) 2352-2157 / Cel. (11) 97288-9984}
+\moveleft.5\hoffset\centerline{mik@il-freitas.com}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{OBJETIVOS \hspace{\divspace} }
+
+Aprender novas tecnologias, expandir conhecimentos e habilidades. Encontrar e resolver problemas difíceis e desafios. Entrar em contato com profissionais de qualidade alta para que possa haver uma troca de aprendizados.
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{FORMAÇÃO \hspace{\divspace} }
+
+{\myprojectface Bacharelado em Ciência da Computação} \hfill 2008 — 2012 \\
+{\myorgface Instituto de Matemática e Estatística} da {\myorgface Universidade de São Paulo} \\
+Trabalho de Conclusão de Curso: Resolvendo o problema PSAT com auxílio da ferramenta de software livre MiniSat
+\begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+\item[\sbt] integração em nível de código de ferramentas de software livre para a solução de uma variante probabilística do problema clássico SAT
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+% gambiarra pra fazer um título com duas linhas recuado alinhado na direita
+\section{PROJETOS DE \hspace{\divspace} }
+\section{FACULDADE \hspace{\divspace} }
+\vskip-\baselineskip  % mágica da gambi que faz o texto ser renderizado um linha pra cima
+
+{\myprojectface Desenvolvimento de jogo utilizando ActionScript 3 e Realidade Aumentada} \hfill 2010 (6 meses) \\
+{\mypositionface Programador Principal} \\
+Jogo de estilo puzzle utilizando a linguagem ActionScript 3 juntamente com as bibliotecas: JigLib para simulação física; Papervision3D para a renderização e efeitos em cenários e objetos 3D; FLARManager para definição, detecção e utilização de marcadores de realidade aumentada. Desenvolvido em Windows.
+
+{\myprojectface Desenvolvimento de aplicação interativa 3D simples utilizando C++ e OpenGL} \hfill 2012 (5 meses) \\
+{\mypositionface Programador Solo} \\
+Simulação interativa de física simples com o objetivo de modelar e possibilitar a navegação pelos prédios do Instituto de Matemática e Estatística da USP (ambiente externo) utilizando apenas OpenGL com a linguagem C++. Desenvolvido em Mac OS X.
+
+% {\sl Business Applications Programmer} \hfill Fall 1990 \\
+% Allied-Signal Bendix Friction Materials Division, Financial Planning Department, Latham, NY 
+
+% \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+% \item[\sbt] Developed four ``user friendly" forecasting systems each of which produces 18 to 139 individual reports. 
+% \item[\sbt] Developed or improved almost all IFPS programs used for financial reports. 
+% \end{itemize}
+
+% {\sl Research Programmer} \hfill Summer 1990 \\
+% Psychology Department, Rensselaer Polytechnic Institute 
+% \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+% \item[\sbt] Performed computer aided statistical analysis of data. 
+% \end{itemize} 
+
+% {\sl Assistant Manager} \hfill Summers 1988-89 \\
+% Thunder Restaurant, Canton, CT
+% \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+% \item[\sbt] Recognized need for, developed, and wrote employee training manual. Performed various duties including cooking, employee training, ordering, and inventory control
+% \end{itemize}
+
+\section{PROJETOS \hspace{\divspace} }
+\section{PESSOAIS \hspace{\divspace} }
+\vskip-\baselineskip  % mágica da gambi que faz o texto ser renderizado um linha pra cima
+
+{\myprojectface Jogo multiplataforma utilizando C++} \hfill 2012 — presente \\
+{\mypositionface Programador Solo} \\
+Jogo 2D com engine própria para física e efeitos de luz e sombra. Projeto multiplataforma usando a biblioteca multimídia SFML (C++), OpenGL e GLSL. Atualmente possui versão para Mac OS X e Windows 7.
+
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{EXPERIÊNCIA \hspace{\divspace} }
+
+{\mypositionface Desenvolvedor Pleno} \hfill 2013 — 2014 \\
+{\myorgface VTX Brasil}
+
+\begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+\item[\sbt] Participação na concepção e direção do desenvolvimento de produtos.
+\item[\sbt] Desenvolvimento de {\it frontend} e {\it backend} em aplicativo iOS de mensagens instantâne-\\as e vídeo-chamadas.\hfill(6 meses)
+\item[\sbt] Desenvolvimento de {\it frontend} e {\it backend} em aplicativo Android de multivisualização\\ de vídeos.\hfill(3 meses)
+\item[\sbt] Desenvolvimento de {\it frontend} e {\it backend} em aplicativo iOS de engajamento em vare-\\jo através de tecnologia de ponta.\hfill(10 meses)
+\end{itemize}
+
+{\mypositionface Líder Técnico de P\&D} \hfill 2014 — presente \\
+{\myorgface VTX Brasil}
+
+\begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+\item[\sbt] Planejamento e desenvolvimento de sistemas inteligentes de aprendizado computaci-\\onal com ênfase em processamento de imagens.\hfill(2 meses)
+\end{itemize}
+
+% App para iOS de IM e chamadas de vídeo  —  2013 (6 meses) \\
+% Aplicativo de mensagens instantâneas e de chamadas de vídeo utilizando a biblioteca Liblinphone para gerenciamento de comunicação entre devices por meio do protocolo SIP.
+
+% {\sl Business Applications Programmer} \hfill Fall 1990 \\
+% Allied-Signal Bendix Friction Materials Division, Financial Planning Department, Latham, NY 
+
+% \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+% \item[\sbt] Developed four ``user friendly" forecasting systems each of which produces 18 to 139 individual reports. 
+% \item[\sbt] Developed or improved almost all IFPS programs used for financial reports. 
+% \end{itemize}
+ 
+% {\sl Research Programmer} \hfill Summer 1990 \\
+% Psychology Department, Rensselaer Polytechnic Institute 
+% \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+% \item[\sbt] Performed computer aided statistical analysis of data. 
+% \end{itemize} 
+
+% {\sl Assistant Manager} \hfill Summers 1988-89 \\
+% Thunder Restaurant, Canton, CT
+% \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+% \item[\sbt] Recognized need for, developed, and wrote employee training manual. Performed various duties including cooking, employee training, ordering, and inventory control. 
+% \end{itemize} 
+
+
+%----------------------------------------------------------------------------------------
+%   COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{HABILIDADES \hspace{\divspace} }
+
+% {\sl Languages \& Software:} 
+% COBOL, IFPS, Focus, Megacalc, Pascal, Modula2, C, APL, SNOBOL, FORTRAN, LISP, SPIRES, BASIC, VSPC Autotab, IBM 370 Assembler, Lotus 1-2-3. \\
+% {\sl Operating Systems:} MTS, TSO, Unix. 
+
+- {\sl Linguagens}: \\
+\setlength\tabcolsep{2pt}
+\begin{tabular}{l l}
+\hspace*{1em}{\it Fluente}:& Objective-C, C, regex \\
+\hspace*{1em}{\it Muito Familiar}:& Python, C++, Java, Scheme, Erlang, ActionScript 3, \LaTeX, GLSL \\
+\hspace*{1em}{\it Pouco Familiar}:& CUDA, Assembly, Prolog, Swift, Smalltalk, Pascal, Bash \\
+\end{tabular}
+
+- {\sl Frameworks, bibliotecas e tecnologias:} \\
+\hspace*{1em}iBeacon, SFML, Allegro, NumPy, JigLib, Papervision3D, FLARManager, AllJoyn, Vuforia, OpenCV, \\
+\hspace*{1em}Liblinphone \\
+
+- {\sl Softwares e ferramentas:} \\
+\hspace*{1em} Git (avançado), gnuplot, Adobe Photoshop, Xcode, Eclipse, ADT, \\
+- Conhecimento intermediário de OpenGL e {\it shaders} \\
+- Desenvolvimento em Ubuntu e Debian (7 anos), e Mac OSX (5 anos) \\
+- Conhecimento dos IDEs Xcode, Eclipse, ADT e FlashDevelop \\
+- Conhecimento intermediário de criptografia \\
+- Edição básica de imagem no Adobe Photoshop \\
+- Inglês fluente, japonês básico, espanhol básico \\
+
+
+
+%----------------------------------------------------------------------------------------
+%	EXTRA-CURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+% gambiarra pra fazer um título com duas linhas recuado alinhado na direita
+\section{PRÊMIOS E \hspace{\divspace} }
+\section{CONQUISTAS \hspace{\divspace} }
+\vskip-\baselineskip  % mágica da gambi que faz o texto ser renderizado um linha pra cima
+
+% Elected {\it House Manager}, Rho Phi Sorority \\
+% Elected {\it Sports Chairman} \\
+% Attended Krannet Leadership Conference \\
+% Headed delegation to Rho Phi Congress \\
+% Junior varsity basketball team \\
+% Participant, seven intramural athletic teams 
+
+- Medalha de Bronze na {\it Olimpíada Brasileira de Informática} (2007) \\
+- Medalha de Prata na {\it Olimpíada Brasileira de Astronomia} (2006) \\
+- Medalha de Prata na {\it Olimpíada Brasileira de Astronomia} (2007) \\
+- Menção Honrosa na {\it Olimpíada Brasileira de Física} (2007) \\
+- Chamado até a última fase do recrutamento da Microsoft no IME - USP (2012)
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}
