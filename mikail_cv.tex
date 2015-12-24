@@ -94,8 +94,8 @@
 
 % parâmetros de língua e foco do CV
 \newif\ifport
-\porttrue
-% \portfalse
+% \porttrue
+\portfalse
 
 \newif\ifgames
 % \gamestrue
@@ -139,11 +139,11 @@
 \ifport
     \section{OBJETIVOS \hspace{\divspace} }
 
-    Aprender novas tecnologias e expandir conhecimentos e habilidades, através da busca e superação de desafios. Tornar-me um melhor profissional ensinando e aprendendo com os outros.
+    Expandir meu conhecimento, obter novas habilidades e aperfeiçoar técnicas. Evolução através da busca e superação de desafios assim como através do contato com profissionais da mesma e de diferentes áreas de atuação, aprendendo e ensinando no processo.
 \else
     \section{OBJECTIVES \hspace{\divspace} }
 
-    To learn new technologies and to expand my knowledge and skills through the pursuit and overcoming of challenges. To become a better professional by teaching and learning from others.
+    To expand my knowledge, to obtain new skills and to perfect techniques. Evolution throughout the pursuit and overcoming of challenges as well as throughout contact with professionals from the same and different areas, learning and teaching in the process.
 \fi
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -162,7 +162,7 @@
 
     {\myprojectface Bachelor of Computer Science} \hfill 2008 — 2012 \\
     {\myorgface University of São Paulo}'s {\myorgface Institute of Mathematics and Statistics} (IME - USP)\\
-    Course Completion Assignment: {\sl Solving the PSAT problem with assistance of the free software MiniSat} \href{http://www.ime.usp.br/~cef/mac499-12/monografias/rec/mikail/index.html}{[link]}
+    Course Completion Assignment: {\sl Solving the PSAT problem with assistance of the free software MiniSat} \href{http://www.ime.usp.br/~cef/mac499-12/monografias/rec/mikail/index.html}{[link (portuguese only)]}
     \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
     \item[\sbt] Source code integration of free software tools to optimize one solution to a probabilistic variant of the SAT problem.
     \end{itemize}
@@ -215,7 +215,7 @@
 
     {\myprojectface Jogo multiplataforma em C++} \hfill 2012 — presente (esparso) \\
     {\mypositionface Programador Solo} \\
-    Jogo 2D de plataforma com {\it engine} próprio para física e efeitos de luz e sombra. Projeto multiplataforma usando OpenGL, GLSL e a biblioteca SFML (C++) para gráficos e {\it input}. Atualmente possui versão em início de desenvolvimento para Mac OS X.
+    Jogo 2D de plataforma com {\it engine} próprio para física e efeitos de luz e sombra. Projeto multiplataforma usando OpenGL, GLSL e a biblioteca SFML (C++) para gráficos e {\it input}. Atualmente possui versão em fase de desenvolvimento para Mac OS X.
 
     {\myprojectface Jogo iOS em Swift} \hfill 2015 — presente (esparso) \\
     {\mypositionface Programador Solo} \\
@@ -228,7 +228,7 @@
     {\myprojectface Multiplatform game with C++} \hfill 2012 — present (very sparse) \\
     {\mypositionface Solo Programmer} \\
     2D platform game with it's own physics and lightning effects egines. Multiplatform project that utilizes OpenGL, GLSL and the SFML (C++) library for input and graphics management.
-    Currently has a version in {\it very} early development stage for Mac OS X.
+    Currently has a version in development stage for Mac OS X.
 
     {\myprojectface iOS game with Swift} \hfill 2015 — presente (esparso) \\
     {\mypositionface Solo Programmer} \\
@@ -238,7 +238,7 @@
 \ifport
     \section{EXPERIÊNCIA \hspace{\divspace} }
 
-    {\mypositionface Desenvolvedor Mobile} \hfill 2013 \\
+    {\mypositionface Desenvolvedor Mobile} \hfill 2013 - 2014 \\
     {\myorgface VTX Brasil}
 
     \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
@@ -248,21 +248,35 @@
     Implementação da interface de usuário e utilização do {\it framework} AllJoyn para a comunicação entre dispositivos e gerenciar a sincronização do {\it playback} em cada um usando NTP ({\it Network Time Protocol}).
     \end{itemize}
 
-    {\mypositionface Líder de Desenvolvimento iOS} \hfill 2014 — presente\\
+    {\mypositionface Líder de Desenvolvimento iOS} \hfill 2015 — presente\\
     {\myorgface VTX Brasil}
 
     \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
     \item[\sbt] {\it Concepção e direção no desenvolvimento de produtos}
-    \item[\sbt] {\it Criação e implantação de padrões de desenvolvimento iOS para garantir qualidade de código e agilidade da equipe}
-    \item[\sbt] {\it Aplicativo iOS de engajamento em varejo através de tecnologias de ponta} \hfill (15 meses - presente)\\
-    Concepção, arquitetura e desenvolvimento do aplicativo. Implementação da interface de usuário, integração com {\it framework} próprio de extensão de informações em mídia impressa, gerenciamento simples de {\it beacons} para integração com sistema que disponibiliza para os vendedores informações simples sobre os visitantes das lojas.
-    \item[\sbt] {\it Framework iOS de extensão digital de informações em mídia impressa} \hfill (4 meses - presente)\\
+    \item[\sbt] {\it Criação e implantação de padrões de desenvolvimento iOS, assim como base de código reutilizável, para garantir qualidade e agilidade na produção de código da equipe}
+
+    \ifgames
+        \vfill
+    \else
+    \fi
+
+    \item[\sbt] {\it Aplicativo iOS de engajamento em varejo através de tecnologias de ponta} \hfill (20 meses)\\
+    Concepção, arquitetura e desenvolvimento do aplicativo. Concepção do aplicativo junto ao cliente e à equipe de design. Implementação da interface de usuário, integração com {\it framework} próprio de extensão de informações em mídia impressa, gerenciamento simples de {\it beacons} para integração com sistema que disponibiliza para os vendedores informações simples sobre os visitantes das lojas.
+    \item[\sbt] {\it Framework iOS de extensão digital de informações em mídia impressa} \hfill (4 meses)\\
     Concepção, arquitetura e implementação do {\it framework} de extensão, por sua vez baseado no {\it framework} de realidade aumentada Metaio. Frente iOS de um ecossistema de ferramentas que visa integrar-se com o processo de produção de mídia impressa dos clientes para estendê-la digitalmente.
+
+    \ifgames
+    \else
+        \vfill
+    \fi
+
+    \item[\sbt] {\it Aplicativo iOS de anúncio de ofertas de varejo} \hfill (4 meses)\\
+    Arquitetura, desenvolvimento e gerência do desenvolvimento do aplicativo. Implementação da interface de usuário e gerência da implementação da integração com servidor próprio para acesso a informações de varejo.
 \end{itemize}
 \else
     \section{EXPERIENCE \hspace{\divspace} }
 
-    {\mypositionface Mobile Developer} \hfill 2013 \\
+    {\mypositionface Mobile Developer} \hfill 2013 - 2014 \\
     {\myorgface VTX Brasil}
 
     \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
@@ -272,19 +286,32 @@
     Implementation of the user interface and utilization of the AllJoyn framework for communication between the devices and management of the playback synchronization in each device using NTP ({\it Network Time Protocol}).
     \end{itemize}
 
-    {\mypositionface Head of iOS Development} \hfill 2014 — present\\
+    {\mypositionface Head of iOS Development} \hfill 2015 — present\\
     {\myorgface VTX Brasil}
 
     \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
     \item[\sbt] {\it Product conception and direction of development}
-    \item[\sbt] {\it Definition and establishment of iOS development standards to ensure code quality and team agility}
-    \item[\sbt] {\it iOS application for engagement in retail through innovative technologies} \hfill (15 months - present)\\
-    Application conception, architeturing and development. Implementation of the user interface, integration with our own framework for information extension in printed media, simple beacon management for integration with a system that gives salespeople access to basic informations of the stores visitors.
-    \item[\sbt] {\it iOS framework for digital extension of information in printed media} \hfill (4 months - preset)\\
-    Conception, architeturing and implementation of the extension framework, which in turn is based on the augmented reality framework Metaio. iOS front of an ecosystem of tools that aims to integrate with the printed media production process of the clients to digitally extend it.\\
+    \item[\sbt] {\it Definition and establishment of iOS development standards, as well as a reusable code base, to ensure quality and agility of the team's code production}
+
+    \ifgames
+        \vfill
+    \else
+    \fi
+
+    \item[\sbt] {\it iOS application for engagement in retail through innovative technologies} \hfill (20 months)\\
+    Application conception, architecting and development. Application conception in conjunction with the client and the design team. Implementation of the user interface, integration with our own framework for information extension in printed media, simple beacon management for integration with a system that gives salespeople access to basic informations of the stores visitors.
+    \item[\sbt] {\it iOS framework for digital extension of information in printed media} \hfill (4 months)\\
+    Conception, architecting and implementation of the extension framework, which in turn is based on the augmented reality framework Metaio. iOS front of an ecosystem of tools that aims to integrate with the printed media production process of the clients to digitally extend it.
+    
+    \ifgames
+    \else
+        \vfill
+    \fi
+
+    \item[\sbt] {\it iOS application for advertisement of retail deals} \hfill (4 months)\\
+    Application architecting, development and management of development. Implementation of the user interface and management of the implementation of the integration with our own server for accessing retail information.
     \end{itemize}
 \fi
-\vfill
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \ifport
     \section{HABILIDADES \hspace{\divspace} }
@@ -293,8 +320,8 @@
     \setlength\tabcolsep{2pt}
     \begin{tabular}{r l}
     \hspace*{1.5em}{\sl Fluente}:& Objective-C, C, regex \\
-    \hspace*{1.5em}{\sl Muito Familiar}:& Python, C++, Java, Scheme, Erlang, ActionScript 3, \LaTeX, GLSL \\
-    \hspace*{1.5em}{\sl Pouco Familiar}:& CUDA, Assembly, Prolog, Swift, Smalltalk, Pascal, Bash \\
+    \hspace*{1.5em}{\sl Muito Familiar}:& Swift, Python, C++, Java, Scheme, Erlang, ActionScript 3, \LaTeX, GLSL \\
+    \hspace*{1.5em}{\sl Pouco Familiar}:& CUDA, Assembly, Prolog, Smalltalk, Pascal, Bash \\
     \end{tabular}
     \\
     - {\sl Frameworks, bibliotecas e tecnologias:} \\
@@ -305,33 +332,33 @@
     \hspace*{1.5em}Git (avançado), gnuplot, Xcode, Eclipse, ADT, FlashDevelop, Sublime Text, TextMate, vim
     \\
     - Conhecimento intermediário de OpenGL e {\it shaders} \\
-    - Desenvolvimento em Ubuntu e Debian (7 anos), e Mac OS X (5 anos) \\
+    - Desenvolvimento em Ubuntu e Debian (4 anos), e Mac OS X (5 anos) \\
     - Conhecimento intermediário de criptografia \\
     - Edição de imagem intermediário-avançada no Adobe Photoshop \\
-    - Inglês fluente, japonês básico, espanhol básico
+    - Inglês fluente, japonês básico
 \else
     \section{SKILLS \hspace{\divspace} }
 
-    - {\sl Languages}: \\
+    - {\sl Languages and syntaxes}: \\
     \setlength\tabcolsep{2pt}
     \begin{tabular}{r l}
     \hspace*{1.5em}{\sl Fluent}:& Objective-C, C, regex \\
-    \hspace*{1.5em}{\sl More Familiar}:& Python, C++, Java, Scheme, Erlang, ActionScript 3, \LaTeX, GLSL \\
-    \hspace*{1.5em}{\sl Less Familiar}:& CUDA, Assembly, Prolog, Swift, Smalltalk, Pascal, Bash \\
+    \hspace*{1.5em}{\sl More Familiar}:& Swift, Python, C++, Java, Scheme, Erlang, ActionScript 3, \LaTeX, GLSL \\
+    \hspace*{1.5em}{\sl Less Familiar}:& CUDA, Assembly, Prolog, Smalltalk, Pascal, Bash \\
     \end{tabular}
     \\
     - {\sl Frameworks, libraries and technologies:} \\
     \hspace*{1.5em}iBeacon, SFML, Allegro, NumPy, JigLib, Papervision3D, FLARManager, AllJoyn, Vuforia, \\
     \hspace*{1.5em}OpenCV, Liblinphone, Augmented Reality
     \\
-    - {\sl Softwares e tools:} \\
+    - {\sl Softwares and tools:} \\
     \hspace*{1.5em}Git (advanced), gnuplot, Xcode, Eclipse, ADT, FlashDevelop, Sublime Text, TextMate, vim
     \\
     - Intermediate knowledge of OpenGL and shaders \\
-    - Development in Ubuntu and Debian systems (7 years) and Mac OS X (5 years) \\
+    - Development in Ubuntu and Debian systems (4 years) and Mac OS X (5 years) \\
     - Intermediate knowledge of cryptography \\
     - Intermediate-advanced image editing in Adobe Photoshop \\
-    - Fluent english, basic japanese, basic spanish
+    - Fluent english, basic japanese
 \fi
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \ifport
@@ -352,8 +379,8 @@
     - Silver medal in the {\sl Astronomy Brazilian Olympics} (2006) \\
     - Silver medal in the {\sl Astronomy Brazilian Olympics} (2007) \\
     - Honorable Mention in the {\sl Physics Brazilian Olympics} (2007) \\
-    - Progressed to the second stage (of three) of recruitment by the Microsoft in IME - USP (2011)
-    - Progressed to the last stage of recruitment by the Microsoft in IME - USP (2012)
+    - Progressed to the second stage (of three) of recruitment by Microsoft in IME - USP (2011) \\
+    - Progressed to the last stage of recruitment by Microsoft in IME - USP (2012)
 \fi
 %----------------------------------------------------------------------------------------
 
