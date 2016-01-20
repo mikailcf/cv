@@ -30,7 +30,7 @@
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
 % \usepackage[tmargin=2.2cm, bmargin=2.2cm, lmargin=2.2cm, rmargin=2.2cm]{geometry}
-\usepackage[pdftex]{hyperref}
+\usepackage{hyperref}
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -98,8 +98,8 @@
 \portfalse
 
 \newif\ifgames
-% \gamestrue
-\gamesfalse
+\gamestrue
+% \gamesfalse
 
 %---------------------------------------------------------------------------------------
 
@@ -215,11 +215,11 @@
 
     {\myprojectface Jogo multiplataforma em C++} \hfill 2012 — presente (esparso) \\
     {\mypositionface Programador Solo} \\
-    Jogo 2D de plataforma com {\it engine} próprio para física e efeitos de luz e sombra. Projeto multiplataforma usando OpenGL, GLSL e a biblioteca SFML (C++) para gráficos e {\it input}. Atualmente possui versão em fase de desenvolvimento para Mac OS X.
+    Jogo 2D de plataforma com {\it engine} próprio para física e efeitos de luz e sombra. Projeto multiplataforma usando OpenGL, GLSL e a biblioteca SFML (C++) para gráficos e {\it input}. Atualmente possui versão em fase de desenvolvimento para Mac OS X. \ifgames \href{http://mikail.io/light/}{[link]} \fi
 
     {\myprojectface Jogo iOS em Swift} \hfill 2015 — presente (esparso) \\
     {\mypositionface Programador Solo} \\
-    Jogo 2D de plataforma {\it corrida infinita} que utiliza o {\it framework} SpriteKit da Apple para gráficos e física, com {\it engine} próprio para geração de conteúdo procedural como obstáculos, imagem de fundo e etc.
+    Jogo 2D de plataforma {\it corrida infinita} que utiliza o {\it framework} SpriteKit da Apple para gráficos e física, com {\it engine} próprio para geração de conteúdo procedural como obstáculos, imagem de fundo e etc. \ifgames \href{http://mikail.io/ball/}{[link]} \fi
 \else
     \section{PERSONAL \hspace{\divspace} }
     \section{PROJECTS \hspace{\divspace} }
@@ -228,11 +228,11 @@
     {\myprojectface Multiplatform game with C++} \hfill 2012 — present (very sparse) \\
     {\mypositionface Solo Programmer} \\
     2D platform game with it's own physics and lightning effects egines. Multiplatform project that utilizes OpenGL, GLSL and the SFML (C++) library for input and graphics management.
-    Currently has a version in development stage for Mac OS X.
+    Currently has a version in development stage for Mac OS X. \ifgames \href{http://mikail.io/light/}{[link]} \fi
 
-    {\myprojectface iOS game with Swift} \hfill 2015 — presente (esparso) \\
+    {\myprojectface iOS game with Swift} \hfill 2015 — present (sparse) \\
     {\mypositionface Solo Programmer} \\
-    2D platform {\it infinite runner} game using the SpriteKit framework from Apple for graphics and physics, with it's own engine for procedural content generation such as obstacles, background graphics and etc.
+    2D platform {\it infinite runner} game using the SpriteKit framework from Apple for graphics and physics, with it's own engine for procedural content generation such as obstacles, background graphics and etc. \ifgames \href{http://mikail.io/ball/}{[link]} \fi
 \fi
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \ifport
