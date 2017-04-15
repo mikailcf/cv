@@ -91,15 +91,11 @@
 % \def \myorgface{\lfseries}
 % \def \myorgface{\mdseries}
 
-
-% parâmetros de língua e foco do CV
-\newif\ifport
-% \porttrue
-\portfalse
+% parâmetros de foco do CV
 
 \newif\ifgames
-% \gamestrue
-\gamesfalse
+\gamestrue
+%\gamesfalse
 
 %---------------------------------------------------------------------------------------
 
@@ -113,15 +109,9 @@
 
 \moveleft.5\hoffset\centerline{\rule{2.5in}{.2pt}}\smallskip % Your address
 
-\ifport
-    \moveleft.5\hoffset\centerline{25 anos - End. Alameda Itupiranga, 309, Saúde} % Your address
-    \moveleft.5\hoffset\centerline{São Paulo, SP - 04294-090}
-    \moveleft.5\hoffset\centerline{Tel. Res. (11) 2352-2157 / Cel. (11) 97288-9984}
-\else
-    \moveleft.5\hoffset\centerline{Addr. Alameda Itupiranga, 309, Saúde} % Your address
-    \moveleft.5\hoffset\centerline{Brazil, São Paulo, SP - 04294-090}
-    \moveleft.5\hoffset\centerline{Home. +55 (11) 2352-2157 / Mobile. +55 (11) 97288-9984}
-\fi
+\moveleft.5\hoffset\centerline{Addr. Alameda Itupiranga, 309, Saúde} % Your address
+\moveleft.5\hoffset\centerline{Brazil, São Paulo, SP - 04294-090}
+\moveleft.5\hoffset\centerline{Home. +55 (11) 2352-2157 / Mobile. +55 (11) 97288-9984}
 
 \ifgames
     \moveleft.5\hoffset\centerline{contact@mikail.io / Website. \href{http://mikail.io}{http://mikail.io}}
@@ -136,277 +126,165 @@
 
 \begin{resume}
 
-\ifport
-    \section{OBJETIVOS \hspace{\divspace} }
+\section{OBJECTIVES \hspace{\divspace} }
 
-    Expandir meu conhecimento, obter novas habilidades e aperfeiçoar técnicas. Evolução através da busca e superação de desafios assim como através do contato com profissionais da mesma e de diferentes áreas de atuação, aprendendo e ensinando no processo.
-\else
-    \section{OBJECTIVES \hspace{\divspace} }
-
-    To expand my knowledge, to obtain new skills and to perfect techniques. Evolution throughout the pursuit and overcoming of challenges as well as throughout contact with professionals from the same and different areas, learning and teaching in the process.
-\fi
+To learn, obtain new skills and hone current ones. To earn experience through pursuit and overcoming of challenges as well as throughout the contact with professionals from the same and different areas, learning and teaching in the process.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\ifport
-    \section{FORMAÇÃO \hspace{\divspace} }
 
-    {\myprojectface Bacharelado em Ciência da Computação} \hfill 2008 — 2012 \\
-    {\myorgface Instituto de Matemática e Estatística} da {\myorgface Universidade de São Paulo} \\
-    Trabalho de Conclusão de Curso: {\sl Resolvendo o problema PSAT com auxílio da ferramenta de software livre MiniSat} \href{http://www.ime.usp.br/~cef/mac499-12/monografias/rec/mikail/index.html}{[link]}
-    \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
-    \item[\sbt] Integração do código fonte de ferramentas de {\it software} livre para a otimização da solução de uma variante probabilística do problema clássico SAT.
-    \end{itemize}
+\section{EDUCATION \hspace{\divspace} }
 
-\else
-    \section{EDUCATION \hspace{\divspace} }
-
-    {\myprojectface Bachelor of Computer Science} \hfill 2008 — 2012 \\
-    {\myorgface University of São Paulo}'s {\myorgface Institute of Mathematics and Statistics} (IME - USP)\\
-    Course Completion Assignment: {\sl Solving the PSAT problem with assistance of the free software MiniSat} \href{http://www.ime.usp.br/~cef/mac499-12/monografias/rec/mikail/index.html}{[link (portuguese only)]}
-    \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
-    \item[\sbt] Source code integration of free software tools to optimize one solution to a probabilistic variant of the SAT problem.
-    \end{itemize}
-\fi
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\ifport
-    \section{PROJETOS DE \hspace{\divspace} }
-    \section{FACULDADE \hspace{\divspace} }
-    \vskip-2.5ex  % mágica da gambi que faz o texto ser renderizado um linha pra cima
-
-    \ifgames
-        {\myprojectface Jogo 2D simples em C} \hfill 2010 (4 months) \\
-        {\mypositionface Programador principal} \\
-        Jogo 2D com física simples onde dois jogadores competem entre si por pontos por salvarem sobreviventes de um naufrágio. Feito em C com a biblioteca multimídia (gráficos e {\it input}) Allegro. \href{http://mikail.io/castaway/}{[link]}
-
-        {\myprojectface Desenvolvimento de jogo em ActionScript 3 com Realidade Aumentada} \hfill 2010 (6 meses) \\
-        {\mypositionface Programador Solo} \\
-        Jogo {\it puzzle} 3D de realidade aumentada onde o jogador deve fazer uma bola chegar ao objetivo passando por obstáculos no interior virtual de um cubo. Feito em ActionScript 3 e as bibliotecas: JigLib para física 3D, Papervision3D para gráficos 3D, FLARManager para realidade aumentada. \href{http://mikail.io/ar_game/}{[link]}
-    \else
-    \fi
-
-    {\myprojectface Desenvolvimento de aplicação interativa 3D simples em C++ com OpenGL} \hfill 2012 (5 meses) \\
-    {\mypositionface Programador Solo} \\
-    Simulação interativa de física simples onde é possível andar pelos prédios do Instituto de Matemática e Estatística da USP (ambiente externo) com simulação opcional de chuva e neblina. Feito em C++ apenas com OpenGL. \ifgames \href{http://mikail.io/walker/}{[link]} \fi
-\else
-    \section{COLLEGE \hspace{\divspace} }
-    \section{PROJECTS \hspace{\divspace} }
-    \vskip-2.5ex  % mágica da gambi que faz o texto ser renderizado uma linha pra cima
-
-    \ifgames
-        {\myprojectface Simple 2D game with C} \hfill 2010 (4 months) \\
-        {\mypositionface Lead Programmer} \\
-        2D game with simple physics where two players compete with each other for points for saving survivors from a shipwreck. Made with C and the Allegro multimedia library (graphics and input). \href{http://mikail.io/castaway/}{[link]}
-
-        {\myprojectface Augmented reality 3D game with ActionScript 3} \hfill 2010 (6 months) \\
-        {\mypositionface Solo Programmer} \\
-        Augmented reality 3D puzzle game where the player has to make a ball reach the objective going through obstacles in the virtual inside of a cube. Made with ActionScript 3 and the following libraries: JigLib for 3D physics, Papervision3D for 3D graphics, FLARManager for augmented reality. \href{http://mikail.io/ar_game/}{[link]}
-    \else
-    \fi
-
-    {\myprojectface First Person Walking Simulator with C++ and OpenGL} \hfill 2012 (5 months) \\
-    {\mypositionface Solo Programmer} \\
-    Interactive simulation with basic physics enabling the user to walk around the buildings of the USP's Institute of Mathematics and Statistics (outside only) with optional simulation for rain and fog. Made solely with C++ and OpenGL. \ifgames \href{http://mikail.io/walker/}{[link]} \fi
-\fi
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\ifport
-    \section{PROJETOS \hspace{\divspace} }
-    \section{PESSOAIS \hspace{\divspace} }
-    \vskip-2.5ex  % mágica da gambi que faz o texto ser renderizado um linha pra cima
-
-    {\myprojectface Jogo multiplataforma em C++} \hfill 2012 — presente (esparso) \\
-    {\mypositionface Programador Solo} \\
-    Jogo 2D de plataforma com {\it engine} próprio para física e efeitos de luz e sombra. Projeto multiplataforma usando OpenGL, GLSL e a biblioteca SFML (C++) para gráficos e {\it input}. Atualmente possui versão em fase de desenvolvimento para Mac OS X. \ifgames \href{http://mikail.io/light/}{[link]} \fi
-
-    {\myprojectface Jogo iOS em Swift} \hfill 2015 — presente (esparso) \\
-    {\mypositionface Programador Solo} \\
-    Jogo 2D de plataforma {\it corrida infinita} que utiliza o {\it framework} SpriteKit da Apple para gráficos e física, com {\it engine} próprio para geração de conteúdo procedural como obstáculos, imagem de fundo e etc. \ifgames \href{http://mikail.io/ball/}{[link]} \fi
-\else
-    \section{PERSONAL \hspace{\divspace} }
-    \section{PROJECTS \hspace{\divspace} }
-    \vskip-2.5ex  % mágica da gambi que faz o texto ser renderizado uma linha pra cima
-
-    {\myprojectface Multiplatform game with C++} \hfill 2012 — present (very sparse) \\
-    {\mypositionface Solo Programmer} \\
-    2D platform game with it's own physics and lightning effects egines. Multiplatform project that utilizes OpenGL, GLSL and the SFML (C++) library for input and graphics management.
-    Currently has a version in development stage for Mac OS X. \ifgames \href{http://mikail.io/light/}{[link]} \fi
-
-    {\myprojectface iOS game with Swift} \hfill 2015 — present (sparse) \\
-    {\mypositionface Solo Programmer} \\
-    2D platform {\it infinite runner} game using the SpriteKit framework from Apple for graphics and physics, with it's own engine for procedural content generation such as obstacles, background graphics and etc. \ifgames \href{http://mikail.io/ball/}{[link]} \fi
-\fi
-%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\ifport
-    \section{EXPERIÊNCIA \hspace{\divspace} }
-
-    {\mypositionface Desenvolvedor Mobile} \hfill 2013 - 2014 \\
-    {\myorgface VTX Brasil}
-
-    \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
-    \item[\sbt] {\it Aplicativo iOS de mensagens instantâneas e vídeo-chamadas} \hfill (6 meses)\\
-    Implementação da interface de usuário e integração com a biblioteca Liblinphone de comunicação baseada em SIP ({\it Session Initiation Protocol}).
-    \item[\sbt] {\it Aplicativo Android para visualização de vídeos composta por múltiplos dispositivos} \hfill (3 meses)\\
-    Implementação da interface de usuário e utilização do {\it framework} AllJoyn para a comunicação entre dispositivos e gerenciar a sincronização do {\it playback} em cada um usando NTP ({\it Network Time Protocol}).
-    \end{itemize}
-
-    {\mypositionface Líder de Desenvolvimento iOS} \hfill 2015\\
-    {\myorgface VTX Brasil}
-
-    \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
-    \item[\sbt] {\it Concepção e direção no desenvolvimento de produtos}
-    \item[\sbt] {\it Criação e implantação de padrões de desenvolvimento iOS, assim como base de código reutilizável, para garantir qualidade e agilidade na produção de código da equipe}
-
-    \ifgames
-        \vfill
-    \else
-    \fi
-
-    \item[\sbt] {\it Aplicativo iOS de engajamento em varejo através de tecnologias de ponta} \hfill (20 meses)\\
-    Concepção, arquitetura e desenvolvimento do aplicativo. Concepção do aplicativo junto ao cliente e à equipe de design. Implementação da interface de usuário, integração com {\it framework} próprio de extensão de informações em mídia impressa, gerenciamento simples de {\it beacons} para integração com sistema que disponibiliza para os vendedores informações simples sobre os visitantes das lojas.
-    \item[\sbt] {\it Framework iOS de extensão digital de informações em mídia impressa} \hfill (4 meses)\\
-    Concepção, arquitetura e implementação do {\it framework} de extensão, por sua vez baseado no {\it framework} de realidade aumentada Metaio. Frente iOS de um ecossistema de ferramentas que visa integrar-se com o processo de produção de mídia impressa dos clientes para estendê-la digitalmente.
-
-    \ifgames
-    \else
-        \vfill
-    \fi
-
-    \item[\sbt] {\it Aplicativo iOS de anúncio de ofertas de varejo} \hfill (4 meses)\\
-    Arquitetura, desenvolvimento e gerência do desenvolvimento do aplicativo. Implementação da interface de usuário e gerência da implementação da integração com servidor próprio para acesso a informações de varejo.
+{\myprojectface Bachelor of Computer Science} \hfill 2008 — 2012 \\
+{\myorgface University of São Paulo}'s {\myorgface Institute of Mathematics and Statistics} (IME - USP)\\
+Course Completion Assignment: {\sl Solving the PSAT problem with assistance of the free software MiniSat} \href{http://www.ime.usp.br/~cef/mac499-12/monografias/rec/mikail/index.html}{[link (portuguese only)]}
+\begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+\item[\sbt] Source code integration of free software tools to optimize one solution to a probabilistic variant of the SAT problem.
 \end{itemize}
-\else
-    \section{EXPERIENCE \hspace{\divspace} }
 
-    {\mypositionface Mobile Developer} \hfill 2013 - 2014 \\
-    {\myorgface VTX Brasil}
-
-    \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
-    \item[\sbt] {\it iOS application for IM and video calls} \hfill (6 months)\\
-    Implementation of the user interface and integration with the Liblinphone library for SIP ({\it Session Initiation Protocol}) based communication.
-    \item[\sbt] {\it Android application for multiple-device split video playback application} \hfill (3 months)\\
-    User interface implementation and utilization of the AllJoyn framework for communication between the devices and management of the playback synchronization in each device using NTP ({\it Network Time Protocol}).
-    \end{itemize}
-
-    {\mypositionface Head of iOS Development} \hfill 2015\\
-    {\myorgface VTX Brasil}
-
-    \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
-    \item[\sbt] {\it Product conception and direction of development}
-    \item[\sbt] {\it Definition and establishment of iOS development standards, as well as a reusable code base, to ensure quality and agility of the team's code production}
-
-    \ifgames
-        \vfill
-    \else
-    \fi
-
-    \item[\sbt] {\it iOS application for engagement in retail through innovative technologies} \hfill (20 months)\\
-    Application conception, architecting and development. Application conception in conjunction with the client and the design team. User interface and app core implementation, integration with our own framework for information extension in printed media, simple beacon management for integration with a system that gives salespeople access to basic informations of the stores visitors.
-    \item[\sbt] {\it iOS framework for digital extension of information in printed media} \hfill (4 months)\\
-    Conception, architecting and implementation of the extension framework, which in turn is based on the augmented reality framework Metaio. iOS front of an ecosystem of tools that aims to integrate with the printed media production process of the clients to digitally extend it.
-    
-    \ifgames
-    \else
-        \vfill
-    \fi
-
-    \item[\sbt] {\it iOS application for advertisement of retail deals} \hfill (4 months)\\
-    Application architecting, development and management of development. User interface and app core implementation and management of implementation of the integration with our own server for accessing retail information.
-    \end{itemize}
-    
-    {\mypositionface iOS Developer} \hfill 2016\\
-    {\myorgface QuintoAndar}
-
-    \begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
-    \item[\sbt] {\it Product architecting}
-    \item[\sbt] {\it Creation of recurrent iOS discussions for the definition and establishment of standards as well as new practices in development (such as MVVM)}
-
-    \ifgames
-        \vfill
-    \else
-    \fi
-
-    \item[\sbt] {\it iOS application for searching and visiting apartments for rent} \hfill (5 months)\\
-    Application architecting and development. User interface and app core implementation. {\it This app received the Best of 2016 prize from Apple.} 
-    \item[\sbt] {\it iOS application for managing user's apartments for rent} \hfill (4 months)\\
-    Application maintenance and refactoring. Development in pursue of eliminating current technical debts as well as refactoring current codebase to ensure the best and more modern practices were being used.
-    
-    \ifgames
-    \else
-    \fi
-    \end{itemize}
-\fi
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\ifport
-    \section{HABILIDADES \hspace{\divspace} }
 
-    - {\sl Linguagens e sintaxes}: \\
-    \setlength\tabcolsep{2pt}
-    \begin{tabular}{r l}
-    \hspace*{1.5em}{\sl Fluente}:& Swift, Objective-C, C, regex \\
-    \hspace*{1.5em}{\sl Muito Familiar}:& Python, C++, Java, Scheme, Erlang, ActionScript 3, \LaTeX, GLSL \\
-    \hspace*{1.5em}{\sl Pouco Familiar}:& CUDA, Assembly, Prolog, Smalltalk, Pascal, Bash \\
-    \end{tabular}
-    \\
-    - {\sl Frameworks, bibliotecas e tecnologias:} \\
-    \hspace*{1.5em}iBeacon, SFML, Allegro, NumPy, JigLib, Papervision3D, FLARManager, AllJoyn, Vuforia, \\
-    \hspace*{1.5em}OpenCV, Liblinphone, Metaio, Realidade Aumentada
-    \\
-    - {\sl Softwares e ferramentas:} \\
-    \hspace*{1.5em}Git (avançado), gnuplot, Xcode, Eclipse, ADT, FlashDevelop, Sublime Text, TextMate, vim
-    \\
-    - Conhecimento intermediário de OpenGL e {\it shaders} \\
-    - Desenvolvimento em Ubuntu e Debian (4 anos), e Mac OS X (5 anos) \\
-    - Conhecimento intermediário de criptografia \\
-    - Edição de imagem intermediário-avançada no Adobe Photoshop \\
-    - Inglês fluente, japonês básico
+\section{COLLEGE \hspace{\divspace} }
+\section{PROJECTS \hspace{\divspace} }
+\vskip-2.5ex  % mágica da gambi que faz o texto ser renderizado uma linha pra cima
+
+\ifgames
+    {\myprojectface Simple 2D game with C} \hfill 2010 (4 months) \\
+    {\mypositionface Lead Programmer} \\
+    2D game with simple physics where two players compete with each other for points for saving survivors from a shipwreck. Made with C and the Allegro multimedia library (graphics and input). \href{http://mikail.io/castaway/}{[link]}
+
+    {\myprojectface Augmented reality 3D game with ActionScript 3} \hfill 2010 (6 months) \\
+    {\mypositionface Solo Programmer} \\
+    Augmented reality 3D puzzle game where the player has to make a ball reach the objective going through obstacles in the virtual inside of a cube. Made with ActionScript 3 and the following libraries: JigLib for 3D physics, Papervision3D for 3D graphics, FLARManager for augmented reality. \href{http://mikail.io/ar_game/}{[link]}
 \else
-    \section{SKILLS \hspace{\divspace} }
-
-    - {\sl Languages and syntaxes}: \\
-    \setlength\tabcolsep{2pt}
-    \begin{tabular}{r l}
-    \hspace*{1.5em}{\sl Fluent}:& Swift, Objective-C, C, regex \\
-    \hspace*{1.5em}{\sl More Familiar}:& Python, C++, Java, Scheme, Erlang, ActionScript 3, \LaTeX, GLSL \\
-    \hspace*{1.5em}{\sl Less Familiar}:& CUDA, Assembly, Prolog, Smalltalk, Pascal, Bash \\
-    \end{tabular}
-    \\
-    - {\sl Frameworks, libraries and technologies:} \\
-    \hspace*{1.5em}iBeacon, SFML, Allegro, NumPy, JigLib, Papervision3D, FLARManager, AllJoyn, Vuforia, \\
-    \hspace*{1.5em}OpenCV, Liblinphone, Augmented Reality
-    \\
-    - {\sl Softwares and tools:} \\
-    \hspace*{1.5em}Git (advanced), gnuplot, Xcode, Eclipse, ADT, FlashDevelop, Sublime Text, TextMate, vim
-    \\
-    - {\sl Architectures:} \\
-    \hspace*{1.5em}MVC, MVVM
-    \\
-    - Intermediate knowledge of OpenGL and shaders \\
-    - Development in Ubuntu and Debian systems (4 years) and Mac OS X (5 years) \\
-    - Intermediate knowledge of cryptography \\
-    - Intermediate-advanced image editing in Adobe Photoshop \\
-    - Fluent english, basic japanese
 \fi
+
+{\myprojectface First Person Walking Simulator with C++ and OpenGL} \hfill 2012 (5 months) \\
+{\mypositionface Solo Programmer} \\
+Interactive simulation with basic physics enabling the user to walk around the buildings of the USP's Institute of Mathematics and Statistics (outside only) with optional simulation for rain and fog. Made solely with C++ and OpenGL. \ifgames \href{http://mikail.io/walker/}{[link]} \fi
+
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\ifport
-    \section{PRÊMIOS E \hspace{\divspace} }
-    \section{CONQUISTAS \hspace{\divspace} }
-    \vskip-2.5ex  % mágica da gambi que faz o texto ser renderizado um linha pra cima
 
-    - Medalha de Bronze na {\sl Olimpíada Brasileira de Informática} (2007) \\
-    - Medalha de Prata na {\sl Olimpíada Brasileira de Astronomia} (2006) \\
-    - Medalha de Prata na {\sl Olimpíada Brasileira de Astronomia} (2007) \\
-    - Menção Honrosa na {\sl Olimpíada Brasileira de Física} (2007) \\
-    - Chamado até a segunda fase (de três) do recrutamento da {\sl Microsoft} no IME - USP (2011) \\
-    - Chamado até a última fase do recrutamento da {\sl Microsoft} no IME - USP (2012)
+\section{PERSONAL \hspace{\divspace} }
+\section{PROJECTS \hspace{\divspace} }
+\vskip-2.5ex  % mágica da gambi que faz o texto ser renderizado uma linha pra cima
+
+{\myprojectface Multiplatform game with C++} \hfill 2012 — present (sparse) \\
+{\mypositionface Solo Programmer} \\
+2D platform game with proprietary physics and lightning effects engines. Multiplatform project that utilizes OpenGL, GLSL and the SFML (C++) library for input and graphics management.
+Currently has a version in development stage for Mac OS X. \ifgames \href{http://mikail.io/platformer/}{[link]} \fi
+
+{\myprojectface iOS game with Swift} \hfill 2015 — present (sparse) \\
+{\mypositionface Solo Programmer} \\
+2D platform {\it infinite runner} game using the SpriteKit framework from Apple for graphics and physics, with proprietary engine for procedural content generation. \ifgames \href{http://mikail.io/runner/}{[link]} \fi
+
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{EXPERIENCE \hspace{\divspace} }
+
+{\mypositionface Mobile Developer} \hfill 2013 - 2014 \\
+{\myorgface VTX Brasil}
+
+\begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+\item[\sbt] {\it iOS application for IM and video calls} \hfill (6 months)\\
+Development of the user interface and integration with the Liblinphone library for SIP ({\it Session Initiation Protocol}) based communication.
+\item[\sbt] {\it Android application for multiple-device split video playback application} \hfill (3 months)\\
+Development of the user interface and integration with the AllJoyn framework for communication between the devices and management of the playback synchronization in each device using NTP ({\it Network Time Protocol}).
+\end{itemize}
+
+{\mypositionface Lead iOS Developer} \hfill 2015\\
+{\myorgface VTX Brasil}
+
+\begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+\item[\sbt] {\it Product conception and direction of development}
+\item[\sbt] {\it Definition and establishment of iOS development standards, as well as a reusable code base, to ensure quality and agility of the team's code production}
+
+\ifgames
+    \vfill
 \else
-    \section{AWARDS \hspace{\divspace} }
-
-    - Bronze medal in the {\sl Informatics Brazilian Olympics} (2007) \\
-    - Silver medal in the {\sl Astronomy Brazilian Olympics} (2006) \\
-    - Silver medal in the {\sl Astronomy Brazilian Olympics} (2007) \\
-    - Honorable Mention in the {\sl Physics Brazilian Olympics} (2007) \\
-    - Progressed to the second stage (of three) of recruitment by Microsoft in IME - USP (2011) \\
-    - Progressed to the last stage of recruitment by Microsoft in IME - USP (2012)
 \fi
+
+\item[\sbt] {\it iOS application for engagement in retail through innovative technologies} \hfill (20 months)\\
+Application conception, architecting and development. Application conception in conjunction with the client and the design team. App development and integration with our proprietary framework for information extension of printed media, as well as simple beacon management for integration with web application enabling salespeople to access basic information of stores' visitors.
+\item[\sbt] {\it iOS framework for digital extension of information in printed media} \hfill (4 months)\\
+Conception, architecting and development of the extension framework, which in turn was based on the augmented reality framework Metaio. iOS front of an ecosystem of tools that aimed to integrate with the printed media production process of business clients to digitally extend it.
+
+\ifgames
+\else
+    \vfill
+\fi
+
+\item[\sbt] {\it iOS application for advertisement of retail deals} \hfill (4 months)\\
+Application architecting, development and management of development. App core implementation and management of implementation of the integration with our proprietary server for accessing retail information.
+\end{itemize}
+
+{\mypositionface iOS Developer} \hfill 2016\\
+{\myorgface QuintoAndar}
+
+\begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+\item[\sbt] {\it Product architecting}
+\item[\sbt] {\it Creation of recurrent iOS discussions for the definition and establishment of standards as well as new practices in development (such as MVVM)}
+
+\item[\sbt] {\it iOS application for searching and visiting apartments for rent} \hfill (5 months)\\
+Application architecting and development. {\it This app received the Best of 2016 prize from Apple.} 
+\item[\sbt] {\it iOS application for managing user's apartments for rent} \hfill (4 months)\\
+Application development and refactoring. Development in pursue of eliminating current technical debts as well as refactoring current codebase to ensure the best and more modern practices were being used.
+
+\ifgames
+\else
+\fi
+\end{itemize}
+
+{\mypositionface Mobile Tech Lead} \hfill 2017\\
+{\myorgface Itaú}
+
+\begin{itemize}[itemsep=\myitemsep,leftmargin=\myitemback]
+\item[\sbt] {\it Analysis and engineering of the best solutions within Itaú's technical ecosystem}
+\item[\sbt] {\it Part of iOS discussions for best practices and part of the team responsible for guaranteeing the implementation of coding standards by other feature squads}
+\item[\sbt] {\it iOS application for serving business users} \hfill (current)\\
+Management of iOS and Android development as well as necessary integration with Itaú's backend.
+
+\ifgames
+\else
+\fi
+\end{itemize}
+
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{SKILLS \hspace{\divspace} }
+
+- {\sl Languages and syntaxes}: \\
+\setlength\tabcolsep{2pt}
+\begin{tabular}{r l}
+\hspace*{1.5em}{\sl Fluent}:& Swift, Objective-C, C, regex \\
+\hspace*{1.5em}{\sl More Familiar}:& Python, C++, Java, Scheme, Erlang, ActionScript 3, \LaTeX, GLSL \\
+\hspace*{1.5em}{\sl Less Familiar}:& CUDA, Assembly, Prolog, Smalltalk, Pascal, Bash \\
+\end{tabular}
+\\
+- {\sl Frameworks, libraries and technologies:} \\
+\hspace*{1.5em}iBeacon, SFML, Allegro, NumPy, JigLib, Papervision3D, FLARManager, Vuforia, \\
+\hspace*{1.5em}OpenCV, Augmented Reality
+\\
+- {\sl Softwares and tools:} \\
+\hspace*{1.5em}Git (advanced), Docker (basic), gnuplot, Xcode, Eclipse, ADT, FlashDevelop, Sublime Text, TextMate, vim
+\\
+- {\sl Architectures:} \\
+\hspace*{1.5em}MVC, MVVM
+\\
+- Intermediate knowledge of OpenGL and shaders \\
+- Basic knowledge of cryptography and Artificial Intelligence \\
+- Development in Ubuntu and Debian systems (4 years) and Mac OS X (5 years) \\
+- Intermediate-advanced image editing in Adobe Photoshop \\
+- Fluent english, basic japanese
+
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{AWARDS \hspace{\divspace} }
+
+- Bronze medal in the {\sl Informatics Brazilian Olympics} (2007) \\
+- Silver medal in the {\sl Astronomy Brazilian Olympics} (2006) \\
+- Silver medal in the {\sl Astronomy Brazilian Olympics} (2007) \\
+- Honorable Mention in the {\sl Physics Brazilian Olympics} (2007) \\
+
 %----------------------------------------------------------------------------------------
 
 \end{resume}
